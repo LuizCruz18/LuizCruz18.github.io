@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz Henrique da Cruz</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
 
-    <header class="main-header">
-        <h1>Luiz Henrique da Cruz</h1>
-        <p>Estudante de Big Data no Agronegócio</p>
-    </header>
+cd ~/caminho/para/luizcruz18.github.io
 
-    <main>
-        <section class="profile-card">
-            <h2>Sobre Mim</h2>
-            <p>Sou estudante de Big Data no Agronegócio, aprendendo sobre tecnologia e inovações. Estou buscando oportunidades para aplicar meus conhecimentos e crescer profissionalmente no setor.</p>
-        </section>
+# 2. Apague todos os arquivos antigos (se quiser começar do zero)
+rm -rf *
 
-        <section class="buttons">
-            <a href="curriculo-luiz.pdf" class="btn" download>📄 Baixar Currículo</a>
-            <a href="https://www.instagram.com/cruz_luizz/" class="btn" target="_blank">📷 Instagram</a>
-        </section>
-    </main>
+# 3. Extraia o novo conteúdo do ZIP na pasta
+unzip ~/Downloads/portifolio_atualizado.zip -d .
 
-    <footer>
-        <p>&copy; 2025 Luiz Henrique da Cruz. Todos os direitos reservados.</p>
-    </footer>
+# 4. Adicione tudo ao Git
+git add .
 
-</body>
-</html>
+# 5. Faça o commit com uma mensagem
+git commit -m "Atualiza portfólio com imagem, fundo roxo e estilo personalizado"
+
+# 6. Envie para o GitHub
+git push
